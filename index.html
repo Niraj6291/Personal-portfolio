@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">𝒩𝒾𝓇𝒶𝒿</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Niraj</span><br>From Bihar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Detail-oriented and passionate Web Developer with hands-on experience in crafting user-friendly,
+                        responsive, and dynamic web applications. Proficient in front-end and back-end development
+                        technologies, and skilled in implementing creative solutions for web performance optimization.
+                        Strong foundation in web development principles, coupled with academic projects and continuous
+                        learning.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing responsive user interfaces</li>
+                            <li><span>Web Developer</span> <br>HTML, CSS, JavaScript, Angular, Flask</li>
+                            <li><span>App Developer</span><br>Building dynamic web apps with Python/ML integration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 – Current</span><br> Building Weather App & Language Detection Web App</li>
+                            <li><span>2024 – 2025</span> <br>Plant Leaf Disease Detection System Project</li>
+                            <li><span>2023 – 2024</span><br> Frontend Projects: Spotify & Netflix Clones</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 – Present</span><br> B.Tech in Electrical and Electronics Engineering <br>
+                                Centurion University of Technology and Management, Odisha</li>
+                            <li><span>2020 – 2022</span> <br>Intermediate (Class 12), Bhawanpur Ratti, Vaishali</li>
+                            <li><span>2018 – 2020</span><br> Matriculation (Class 10), Bhawanpur Ratti, Vaishali</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Web Design</h2>
+                    <p>I create clean, responsive, and modern websites using HTML, CSS, JavaScript, and Angular. My
+                        designs are optimized for performance and user experience across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I focus on crafting user interfaces that are intuitive, attractive, and user-friendly. I pay
+                        attention to every detail to ensure smooth interaction and accessibility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I design web applications that are both visually appealing and functionally robust. Whether it's
+                        a clone project or a smart tool, I combine design with logic to bring ideas to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image-143.png">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>A frontend clone of Spotify built using HTML, CSS, and JavaScript. It replicates the core layout and styling of the original platform with responsive design and interactive music sections.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image-141.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>A dynamic weather application that shows real-time weather updates. It fetches data from an API and displays temperature, conditions, and location info in a clean, user-friendly interface.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image-142.jpg">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>A visually engaging replica of Netflix created with HTML, CSS, and JavaScript. It features a responsive layout, content sliders, and a dark-themed UI to mimic the original platform's feel.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------contact-------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>123456890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv01.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your name">
+                        <input type="email" name="Email" placeholder="Enter Your email">
+                        <textarea name="Massage" rows="6" placeholder="Enter your massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2025 Niraj Kumar. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- ----------------google sheet---------- -->
+     <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzL4Lb8sjfGHnUWnxmz1Nn0aI2aYpRWuEJQhaXOxgmyDAbTw_ztmr6HxS4K1knblrcCrQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Massage send successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 1000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
